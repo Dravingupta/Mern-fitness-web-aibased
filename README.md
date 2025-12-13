@@ -91,7 +91,7 @@ Whether your goal is **fat loss, muscle gain, or overall fitness**, *Guru-ji* ac
 ### Other Tools
 - **Icons:** Lucide React
 - **State Management:** React Hooks
-- **Storage:** LocalStorage (No backend required)
+- **Storage:** Mongo DB
 
 ---
 
