@@ -1,43 +1,131 @@
-Indian AI Fitness Coach
-Your Personalized "Guru-ji" for Health & Wellness
-Indian AI Fitness Coach is a modern, AI-powered progressive web application (PWA) designed specifically for the Indian demographic. Unlike generic fitness apps, it leverages Google's Gemini 3 Pro & 2.5 Flash models to generate hyper-personalized diet and workout plans that respect Indian regional cuisines, dietary restrictions (Veg, Non-Veg, Jain), and budget levels.
-Whether you are looking to lose fat, build muscle, or maintain general fitness, this app acts as a 24/7 personal coach that fits right in your pocket.
-🚀 Key Features
-🥗 Hyper-Localized Diet Planning
-Region-Specific Context: Generates meal plans based on North, South, East, or West Indian cuisines (e.g., Idli/Dosa vs. Roti/Dal).
-Budget Aware: AI adjusts recommendations based on your budget (Low, Medium, Flexible), suggesting affordable staples like lentils and seasonal vegetables or premium ingredients like Greek yogurt and avocados.
-Allergy Safety: Strict AI guardrails to filter out specific allergens from generated recipes.
-Meal Swapping: Don't like a specific meal? One-click AI swap to find a calorie-matched alternative.
-🏋️ Adaptive Workout Routines
-Home vs. Gym: Generates equipment-free home workouts or full 7-day gym splits (Push/Pull/Legs, etc.) based on user preference.
-AI Progressions: Workouts include warmup, main circuit with set/rep ranges, and cooldowns.
-Log Manual Activity: Track extra activities like evening walks, cricket, or yoga with estimated calorie burn calculations.
-🤖 AI Body Analysis (Computer Vision)
-Gemini Vision Integration: Users can upload a full-body photo to receive an instant, privacy-focused analysis of their Somatotype (Ectomorph, Mesomorph, Endomorph) and posture, powered by gemini-2.5-flash-image.
-💬 "Guru-ji" AI Chatbot
-Context-Aware Coaching: A built-in chat interface where the AI knows your specific profile, goals, and injuries.
-Motivation & Advice: Ask for form checks, ingredient alternatives, or just daily motivation in a friendly, encouraging persona.
-📊 Smart Tracking & Dashboard
-Calorie Command Center: Visual rings for Calories In vs. Calories Out.
-Macro Tracking: Auto-calculated macro targets (Protein, Carbs, Fats) or custom user-defined goals.
-Gamification: Streak counters and weekly summary verdicts to keep users consistent.
-🛠 Tech Stack
-Frontend: React.js (v19), TypeScript
-Styling: Tailwind CSS (with Dark Mode support)
-AI Integration: Google GenAI SDK (@google/genai)
-Models Used:
-gemini-3-pro-preview (Complex reasoning for Diets/Workouts)
-gemini-2.5-flash (Chat & Text tasks)
-gemini-2.5-flash-image (Vision analysis)
-Icons: Lucide React
-State Management: React Hooks & LocalStorage (No backend required)
-📱 User Experience
-The app features a mobile-first design with a clean, cohesive UI:
-Dark Mode: Fully supported system-aware theme switching.
-Privacy First: All data is stored locally on the user's device (localStorage); no external database is required for user profiles.
-Seamless Onboarding: A multi-step wizard to capture age, weight, height, goals, and dietary nuances.
-🔮 Future Roadmap
-PWA Offline Support: Full offline caching for viewing plans without internet.
-Voice Integration: "Talk to Guru-ji" feature using Web Speech API.
-Social Sharing: Share workout summaries or diet streaks on WhatsApp/Instagram.
-Made with ❤️ by [Your Name]
+# 🧘‍♂️ Indian AI Fitness Coach – *Guru-ji*
+
+**Your Personalized AI Guru for Health & Wellness 🇮🇳**
+
+Indian AI Fitness Coach is a modern, AI-powered **Progressive Web App (PWA)** designed specifically for the **Indian demographic**.  
+Unlike generic fitness apps, it leverages **Google Gemini models** to deliver **hyper-personalized diet plans, workouts, and coaching**, aligned with Indian food habits, budgets, and lifestyles.
+
+Whether your goal is **fat loss, muscle gain, or overall fitness**, *Guru-ji* acts as your **24/7 AI fitness coach**, right in your pocket.
+
+---
+
+## 🚀 Key Features
+
+### 🥗 Hyper-Localized Diet Planning
+- **Region-Specific Meals**  
+  North, South, East & West Indian cuisines (Roti/Dal, Idli/Dosa, Rice meals, etc.)
+- **Diet Preferences Supported**  
+  Vegetarian, Non-Vegetarian, Jain
+- **Budget Aware AI**  
+  - Low: Lentils, seasonal vegetables  
+  - Medium: Balanced staples  
+  - Flexible: Premium options like Greek yogurt, nuts, avocados
+- **Allergy-Safe Recipes**  
+  Strict AI guardrails to exclude allergens
+- **One-Click Meal Swap**  
+  Instantly replace meals with calorie-matched alternatives
+
+---
+
+### 🏋️ Adaptive Workout Routines
+- **Home or Gym Workouts**
+  - Equipment-free home workouts
+  - Full gym splits (Push / Pull / Legs, 7-day plans)
+- **AI-Designed Structure**
+  - Warm-up
+  - Main workout (sets & reps)
+  - Cool-down
+- **Manual Activity Logging**
+  - Walking, cricket, yoga, etc.
+  - Auto calorie burn estimation
+
+---
+
+### 🤖 AI Body Analysis (Computer Vision)
+- **Gemini Vision Integration**
+- Upload a full-body image to receive:
+  - Somatotype analysis (Ectomorph / Mesomorph / Endomorph)
+  - Basic posture insights
+- **Privacy-Focused**: No image storage, local processing intent only
+
+---
+
+### 💬 “Guru-ji” AI Chatbot
+- **Context-Aware Coaching**
+  - Knows your goals, diet type, workouts & injuries
+- **Ask Anything**
+  - Exercise form tips
+  - Food alternatives
+  - Daily motivation
+- Friendly, encouraging **Indian Guru persona**
+
+---
+
+### 📊 Smart Dashboard & Tracking
+- **Calorie Command Center**
+  - Calories In vs Calories Out visual rings
+- **Macro Tracking**
+  - Auto-calculated Protein, Carbs, Fats
+  - Custom macro goals supported
+- **Gamification**
+  - Daily streaks
+  - Weekly fitness verdicts
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- **React.js (v19)**
+- **TypeScript**
+- **Tailwind CSS**
+  - Dark Mode support
+
+### AI Integration
+- **Google GenAI SDK** (`@google/genai`)
+- **Models Used**
+  - `gemini-3-pro-preview` – Diet & Workout reasoning
+  - `gemini-2.5-flash` – Chat & text generation
+  - `gemini-2.5-flash-image` – Body analysis (vision)
+
+### Other Tools
+- **Icons:** Lucide React
+- **State Management:** React Hooks
+- **Storage:** LocalStorage (No backend required)
+
+---
+
+## 📱 User Experience
+- **Mobile-First PWA Design**
+- **Dark Mode**
+  - System-aware theme switching
+- **Privacy First**
+  - All user data stored locally
+  - No external database or tracking
+- **Smooth Onboarding**
+  - Step-by-step wizard:
+    - Age, height, weight
+    - Fitness goals
+    - Diet preferences & restrictions
+
+---
+
+## 🔮 Future Roadmap
+- 📦 Offline PWA support
+- 🎙 Voice interaction – *“Talk to Guru-ji”*
+- 📤 Social sharing (WhatsApp / Instagram)
+- 📈 Advanced analytics & progress insights
+
+---
+
+## 🧑‍💻 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/indian-ai-fitness-coach.git
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
