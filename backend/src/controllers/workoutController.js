@@ -9,7 +9,6 @@ export const createWorkoutPlan = async (req, res) => {
 
         const weekPlan = await generateWeeklyWorkoutPlan(user, startDate || new Date());
 
-        // Save all days
         const savedPlans = await Promise.all(weekPlan.map(day =>
             WorkoutPlan.create({
                 userId: req.user.uid,
